@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.sql.Date;
 
 public class ActivityVO implements Serializable {
-	/*SQL型別轉換參考JDBC P29*/
+	
 	private String activity_Id;
 	private String activity_Name;
 	private String activity_Info;
@@ -13,10 +13,9 @@ public class ActivityVO implements Serializable {
 	private Date activity_End;
 	private String activity_Code;
 	private Integer token_Amount;
-	/*將圖片設為byte[]型別，以利於在DAO中使用getBytes()、setBytes()對VO進行操作*/
 	private byte[] activity_Post;
 	
-	/*由eclisps自動產生*/
+	
 	public String getActivity_Id() {
 		return activity_Id;
 	}
